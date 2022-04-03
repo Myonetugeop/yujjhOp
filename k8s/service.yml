@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fbts
+  name: rtfg
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "fbts"
+  - name: "rtfg"
     port: 8080
   selector:
-    app: fbts
+    app: rtfg
