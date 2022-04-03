@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bga
+  name: vfrtg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bga
+      app: vfrtg
   template:
     metadata:
       labels:
-        app: bga
+        app: vfrtg
     spec:
       containers:
-      - image: okteto.dev/bga:latest
-        name: bga
+      - image: okteto.dev/vfrtg:latest
+        name: vfrtg
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.freemusicarchive.org"
         - name: Vless_UUID
-          value: "1439313a-8791-4cd7-a214-9c9e51f1a50f"
+          value: "6fd7dc04-0d23-498d-89c2-02d455a62ac8"
         - name: Vless_Path
-          value: "/nmhydf"
+          value: "/nrtgrt"
         - name: Vmess_UUID
-          value: "1439313a-8791-4cd7-a214-9c9e51f1a50f"
+          value: "6fd7dc04-0d23-498d-89c2-02d455a62ac8"
         - name: Vmess_Path
-          value: "/mkopl"
+          value: "/nmthytf"
         - name: Share_Path
           value: "/share233"
