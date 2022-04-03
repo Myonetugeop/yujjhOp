@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cdvrg
+  name: nythtyt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cdvrg
+      app: nythtyt
   template:
     metadata:
       labels:
-        app: cdvrg
+        app: nythtyt
     spec:
       containers:
-      - image: okteto.dev/cdvrg:latest
-        name: cdvrg
+      - image: okteto.dev/nythtyt:latest
+        name: nythtyt
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "07b71969-b8e6-447e-8544-3b537c66741e"
+          value: "4c27f6c3-78ce-484b-bf68-f4c90e70e6e4"
         - name: Vless_Path
-          value: "/yhsdb"
+          value: "/bgnhgds"
         - name: Vmess_UUID
-          value: "07b71969-b8e6-447e-8544-3b537c66741e"
+          value: "4c27f6c3-78ce-484b-bf68-f4c90e70e6e4"
         - name: Vmess_Path
-          value: "/nmopffd"
+          value: "/ujdfvft"
         - name: Share_Path
           value: "/share233"
