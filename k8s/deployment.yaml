@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cxer
+  name: tfas
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cxer
+      app: tfas
   template:
     metadata:
       labels:
-        app: cxer
+        app: tfas
     spec:
       containers:
-      - image: okteto.dev/cxer:latest
-        name: cxer
+      - image: okteto.dev/tfas:latest
+        name: tfas
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "beauty-upgrade.tw"
         - name: Vless_UUID
-          value: "104b8b62-ef22-4c29-bba5-c2f6fc8ee44e"
+          value: "4d390efb-6303-466b-9d44-d1e0a11b51b7"
         - name: Vless_Path
-          value: "/jude"
+          value: "/bgyjhg"
         - name: Vmess_UUID
-          value: "104b8b62-ef22-4c29-bba5-c2f6fc8ee44e"
+          value: "4d390efb-6303-466b-9d44-d1e0a11b51b7"
         - name: Vmess_Path
-          value: "/mvde"
+          value: "/kzsscf"
         - name: Share_Path
           value: "/share233"
