@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: oldf
+  name: xzdcds
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "oldf"
+  - name: "xzdcds"
     port: 8080
   selector:
-    app: oldf
+    app: xzdcds
