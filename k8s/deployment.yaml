@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tfas
+  name: oldf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tfas
+      app: oldf
   template:
     metadata:
       labels:
-        app: tfas
+        app: oldf
     spec:
       containers:
-      - image: okteto.dev/tfas:latest
-        name: tfas
+      - image: okteto.dev/oldf:latest
+        name: oldf
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "beauty-upgrade.tw"
         - name: Vless_UUID
-          value: "4d390efb-6303-466b-9d44-d1e0a11b51b7"
+          value: "29492624-ba2f-416d-b1a2-15bc65237cce"
         - name: Vless_Path
-          value: "/bgyjhg"
+          value: "/vfbgfgt"
         - name: Vmess_UUID
-          value: "4d390efb-6303-466b-9d44-d1e0a11b51b7"
+          value: "29492624-ba2f-416d-b1a2-15bc65237cce"
         - name: Vmess_Path
-          value: "/kzsscf"
+          value: "/rtfgbf"
         - name: Share_Path
           value: "/share233"
