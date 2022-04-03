@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bfvgrt
+  name: bgrs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bfvgrt
+      app: bgrs
   template:
     metadata:
       labels:
-        app: bfvgrt
+        app: bgrs
     spec:
       containers:
-      - image: okteto.dev/bfvgrt:latest
-        name: bfvgrt
+      - image: okteto.dev/bgrs:latest
+        name: bgrs
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "c810a1f0-21d9-4cc0-b071-b4cf62febbbc"
+          value: "0a6ca853-f912-47c9-ba3d-07fc1750302f"
         - name: Vless_Path
-          value: "/bntyty"
+          value: "/dbhty"
         - name: Vmess_UUID
-          value: "c810a1f0-21d9-4cc0-b071-b4cf62febbbc"
+          value: "0a6ca853-f912-47c9-ba3d-07fc1750302f"
         - name: Vmess_Path
-          value: "/muuikuf"
+          value: "/mksdd"
         - name: Share_Path
           value: "/share233"
