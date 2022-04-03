@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hehds
+  name: frbd
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hehds"
+  - name: "frbd"
     port: 8080
   selector:
-    app: hehds
+    app: frbd
