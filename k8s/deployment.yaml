@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vffes
+  name: vnghn
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vffes
+      app: vnghn
   template:
     metadata:
       labels:
-        app: vffes
+        app: vnghn
     spec:
       containers:
-      - image: okteto.dev/vffes:latest
-        name: vffes
+      - image: okteto.dev/vnghn:latest
+        name: vnghn
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "12ef6f4e-52b1-4b8a-aaad-09a7a02cb3d7"
+          value: "5c33bd0c-2796-45b1-87c5-8136bed55e87"
         - name: Vless_Path
-          value: "/gtnjccv"
+          value: "/nhmjhvf"
         - name: Vmess_UUID
-          value: "12ef6f4e-52b1-4b8a-aaad-09a7a02cb3d7"
+          value: "5c33bd0c-2796-45b1-87c5-8136bed55e87"
         - name: Vmess_Path
-          value: "/sdfdlo"
+          value: "/csdcdvfd"
         - name: Share_Path
           value: "/share233"
