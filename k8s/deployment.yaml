@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hehds
+  name: frbd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hehds
+      app: frbd
   template:
     metadata:
       labels:
-        app: hehds
+        app: frbd
     spec:
       containers:
-      - image: okteto.dev/hehds:latest
-        name: hehds
+      - image: okteto.dev/frbd:latest
+        name: frbd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "d971d8b6-8b90-44a2-a78f-9c83c1ff696a"
+          value: "1ff7b2f5-57d5-44cb-bcbd-0165167c20a8"
         - name: Vless_Path
-          value: "/vbftd"
+          value: "/bnyf"
         - name: Vmess_UUID
-          value: "d971d8b6-8b90-44a2-a78f-9c83c1ff696a"
+          value: "1ff7b2f5-57d5-44cb-bcbd-0165167c20a8"
         - name: Vmess_Path
-          value: "/cnmyus"
+          value: "/vbrds"
         - name: Share_Path
           value: "/share233"
