@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: was
+  name: wcer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: was
+      app: wcer
   template:
     metadata:
       labels:
-        app: was
+        app: wcer
     spec:
       containers:
-      - image: okteto.dev/was:latest
-        name: was
+      - image: okteto.dev/wcer:latest
+        name: wcer
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "c58412f5-7761-4535-8e4c-14a8858e8767"
+          value: "ed882052-374c-4a48-9d7b-f61bb2620d80"
         - name: Vless_Path
-          value: "/jjshhg"
+          value: "/kgbgf"
         - name: Vmess_UUID
-          value: "c58412f5-7761-4535-8e4c-14a8858e8767"
+          value: "ed882052-374c-4a48-9d7b-f61bb2620d80"
         - name: Vmess_Path
-          value: "/kloosjh"
+          value: "/xcfdvf"
         - name: Share_Path
           value: "/share233"
