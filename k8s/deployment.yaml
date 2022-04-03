@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: khg
+  name: bdsg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: khg
+      app: bdsg
   template:
     metadata:
       labels:
-        app: khg
+        app: bdsg
     spec:
       containers:
-      - image: okteto.dev/khg:latest
-        name: khg
+      - image: okteto.dev/bdsg:latest
+        name: bdsg
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "0c463867-3e69-4587-9145-63cc62ad8bec"
+          value: "70a67f34-25e2-4f0c-a095-7a14ea72e746"
         - name: Vless_Path
-          value: "/bgngh"
+          value: "/uidfcv"
         - name: Vmess_UUID
-          value: "0c463867-3e69-4587-9145-63cc62ad8bec"
+          value: "70a67f34-25e2-4f0c-a095-7a14ea72e746"
         - name: Vmess_Path
-          value: "/ngxdgbgf"
+          value: "/mklsd"
         - name: Share_Path
           value: "/share233"
