@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ikop
+  name: xcvrr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ikop
+      app: xcvrr
   template:
     metadata:
       labels:
-        app: ikop
+        app: xcvrr
     spec:
       containers:
-      - image: okteto.dev/ikop:latest
-        name: ikop
+      - image: okteto.dev/xcvrr:latest
+        name: xcvrr
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "7117b65d-9baf-4699-bde8-42f09305a09b"
+          value: "1b947922-7785-4f63-8b6b-5cb93d318f9d"
         - name: Vless_Path
-          value: "/cvfret"
+          value: "/bnthy"
         - name: Vmess_UUID
-          value: "7117b65d-9baf-4699-bde8-42f09305a09b"
+          value: "1b947922-7785-4f63-8b6b-5cb93d318f9d"
         - name: Vmess_Path
-          value: "/nmmjyu"
+          value: "/mujuf"
         - name: Share_Path
           value: "/share233"
