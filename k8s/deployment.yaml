@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: oldf
+  name: xzdcds
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: oldf
+      app: xzdcds
   template:
     metadata:
       labels:
-        app: oldf
+        app: xzdcds
     spec:
       containers:
-      - image: okteto.dev/oldf:latest
-        name: oldf
+      - image: okteto.dev/xzdcds:latest
+        name: xzdcds
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "beauty-upgrade.tw"
         - name: Vless_UUID
-          value: "29492624-ba2f-416d-b1a2-15bc65237cce"
+          value: "0c5b9727-9e68-4a07-a7a8-17788e50c9e8"
         - name: Vless_Path
-          value: "/vfbgfgt"
+          value: "/bnhty"
         - name: Vmess_UUID
-          value: "29492624-ba2f-416d-b1a2-15bc65237cce"
+          value: "0c5b9727-9e68-4a07-a7a8-17788e50c9e8"
         - name: Vmess_Path
-          value: "/rtfgbf"
+          value: "/yufffgf"
         - name: Share_Path
           value: "/share233"
