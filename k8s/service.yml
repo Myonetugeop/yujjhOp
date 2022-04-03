@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bdsg
+  name: fbts
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bdsg"
+  - name: "fbts"
     port: 8080
   selector:
-    app: bdsg
+    app: fbts
