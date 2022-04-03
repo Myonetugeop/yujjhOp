@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vnghn
+  name: cdvrg
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "vnghn"
+  - name: "cdvrg"
     port: 8080
   selector:
-    app: vnghn
+    app: cdvrg
