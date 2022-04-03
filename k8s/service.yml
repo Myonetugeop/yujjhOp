@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: odjs
+  name: hehds
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "odjs"
+  - name: "hehds"
     port: 8080
   selector:
-    app: odjs
+    app: hehds
