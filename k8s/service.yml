@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vfrtg
+  name: cxer
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "vfrtg"
+  - name: "cxer"
     port: 8080
   selector:
-    app: vfrtg
+    app: cxer
