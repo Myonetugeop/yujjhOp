@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ikop
+  name: xcvrr
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "ikop"
+  - name: "xcvrr"
     port: 8080
   selector:
-    app: ikop
+    app: xcvrr
