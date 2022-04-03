@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bsvf
+  name: vrzc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bsvf
+      app: vrzc
   template:
     metadata:
       labels:
-        app: bsvf
+        app: vrzc
     spec:
       containers:
-      - image: okteto.dev/bsvf:latest
-        name: bsvf
+      - image: okteto.dev/vrzc:latest
+        name: vrzc
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "dcbf88fd-f530-4d4f-be72-e7481d9b36d6"
+          value: "58ef1fb8-de16-4272-8312-303a92dcf51a"
         - name: Vless_Path
-          value: "/obddf"
+          value: "/uibfdd"
         - name: Vmess_UUID
-          value: "dcbf88fd-f530-4d4f-be72-e7481d9b36d6"
+          value: "58ef1fb8-de16-4272-8312-303a92dcf51a"
         - name: Vmess_Path
-          value: "/nmtcsr"
+          value: "/mklfvd"
         - name: Share_Path
           value: "/share233"
