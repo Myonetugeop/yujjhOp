@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tfas
+  name: oldf
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "tfas"
+  - name: "oldf"
     port: 8080
   selector:
-    app: tfas
+    app: oldf
