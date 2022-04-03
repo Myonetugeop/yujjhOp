@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vfr
+  name: bga
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vfr
+      app: bga
   template:
     metadata:
       labels:
-        app: vfr
+        app: bga
     spec:
       containers:
-      - image: okteto.dev/vfr:latest
-        name: vfr
+      - image: okteto.dev/bga:latest
+        name: bga
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.canva.com"
+          value: "www.freemusicarchive.org"
         - name: Vless_UUID
-          value: "9e5d4588-4f3b-4c9a-8c60-bbaebb5fd02c"
+          value: "1439313a-8791-4cd7-a214-9c9e51f1a50f"
         - name: Vless_Path
-          value: "/bgtff"
+          value: "/nmhydf"
         - name: Vmess_UUID
-          value: "9e5d4588-4f3b-4c9a-8c60-bbaebb5fd02c"
+          value: "1439313a-8791-4cd7-a214-9c9e51f1a50f"
         - name: Vmess_Path
-          value: "/mkiol"
+          value: "/mkopl"
         - name: Share_Path
           value: "/share233"
