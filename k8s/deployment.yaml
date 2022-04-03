@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sjf
+  name: odjs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sjf
+      app: odjs
   template:
     metadata:
       labels:
-        app: sjf
+        app: odjs
     spec:
       containers:
-      - image: okteto.dev/sjf:latest
-        name: sjf
+      - image: okteto.dev/odjs:latest
+        name: odjs
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "18879636-809e-4f4d-ab4b-4045796377c9"
+          value: "61e0c0d6-add7-47fa-9460-9f91a6914a28"
         - name: Vless_Path
-          value: "/mvbshbd"
+          value: "/vnmdef"
         - name: Vmess_UUID
-          value: "18879636-809e-4f4d-ab4b-4045796377c9"
+          value: "61e0c0d6-add7-47fa-9460-9f91a6914a28"
         - name: Vmess_Path
-          value: "/sjfkdk"
+          value: "/pskur"
         - name: Share_Path
           value: "/share233"
