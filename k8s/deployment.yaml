@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bdv
+  name: bnt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bdv
+      app: bnt
   template:
     metadata:
       labels:
-        app: bdv
+        app: bnt
     spec:
       containers:
-      - image: okteto.dev/bdv:latest
-        name: bdv
+      - image: okteto.dev/bnt:latest
+        name: bnt
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "de01682e-7ec7-4fc2-8250-52d1b8332468"
+          value: "1f216ecc-50b7-4ac2-8723-866b289e7813"
         - name: Vless_Path
-          value: "/bfrtgt"
+          value: "/drtgt"
         - name: Vmess_UUID
-          value: "de01682e-7ec7-4fc2-8250-52d1b8332468"
+          value: "1f216ecc-50b7-4ac2-8723-866b289e7813"
         - name: Vmess_Path
-          value: "/bfbgfd"
+          value: "/juyyn"
         - name: Share_Path
           value: "/share233"
