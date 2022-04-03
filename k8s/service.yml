@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cxer
+  name: tfas
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "cxer"
+  - name: "tfas"
     port: 8080
   selector:
-    app: cxer
+    app: tfas
