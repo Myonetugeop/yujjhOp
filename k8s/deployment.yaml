@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fbts
+  name: rtfg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fbts
+      app: rtfg
   template:
     metadata:
       labels:
-        app: fbts
+        app: rtfg
     spec:
       containers:
-      - image: okteto.dev/fbts:latest
-        name: fbts
+      - image: okteto.dev/rtfg:latest
+        name: rtfg
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "8f5467f0-4460-488a-9c30-d02ea24116ed"
+          value: "c353b860-c4dc-4e77-81e6-2f3705225c8a"
         - name: Vless_Path
-          value: "/bmye"
+          value: "/orgh"
         - name: Vmess_UUID
-          value: "8f5467f0-4460-488a-9c30-d02ea24116ed"
+          value: "c353b860-c4dc-4e77-81e6-2f3705225c8a"
         - name: Vmess_Path
-          value: "/sfgty"
+          value: "/fnmhy"
         - name: Share_Path
           value: "/share233"
