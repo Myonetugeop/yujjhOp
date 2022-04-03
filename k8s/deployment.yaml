@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nythtyt
+  name: mvjd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nythtyt
+      app: mvjd
   template:
     metadata:
       labels:
-        app: nythtyt
+        app: mvjd
     spec:
       containers:
-      - image: okteto.dev/nythtyt:latest
-        name: nythtyt
+      - image: okteto.dev/mvjd:latest
+        name: mvjd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.videvo.net"
         - name: Vless_UUID
-          value: "4c27f6c3-78ce-484b-bf68-f4c90e70e6e4"
+          value: "6f8a2cff-a269-4609-b009-5d73bef64310"
         - name: Vless_Path
-          value: "/bgnhgds"
+          value: "/jgklksj"
         - name: Vmess_UUID
-          value: "4c27f6c3-78ce-484b-bf68-f4c90e70e6e4"
+          value: "6f8a2cff-a269-4609-b009-5d73bef64310"
         - name: Vmess_Path
-          value: "/ujdfvft"
+          value: "/mashgjd"
         - name: Share_Path
           value: "/share233"
