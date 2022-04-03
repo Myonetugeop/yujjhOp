@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vfrtg
+  name: cxer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vfrtg
+      app: cxer
   template:
     metadata:
       labels:
-        app: vfrtg
+        app: cxer
     spec:
       containers:
-      - image: okteto.dev/vfrtg:latest
-        name: vfrtg
+      - image: okteto.dev/cxer:latest
+        name: cxer
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.freemusicarchive.org"
+          value: "beauty-upgrade.tw"
         - name: Vless_UUID
-          value: "6fd7dc04-0d23-498d-89c2-02d455a62ac8"
+          value: "104b8b62-ef22-4c29-bba5-c2f6fc8ee44e"
         - name: Vless_Path
-          value: "/nrtgrt"
+          value: "/jude"
         - name: Vmess_UUID
-          value: "6fd7dc04-0d23-498d-89c2-02d455a62ac8"
+          value: "104b8b62-ef22-4c29-bba5-c2f6fc8ee44e"
         - name: Vmess_Path
-          value: "/nmthytf"
+          value: "/mvde"
         - name: Share_Path
           value: "/share233"
