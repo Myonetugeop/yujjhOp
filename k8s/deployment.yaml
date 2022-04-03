@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wcer
+  name: vfr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wcer
+      app: vfr
   template:
     metadata:
       labels:
-        app: wcer
+        app: vfr
     spec:
       containers:
-      - image: okteto.dev/wcer:latest
-        name: wcer
+      - image: okteto.dev/vfr:latest
+        name: vfr
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "www.canva.com"
         - name: Vless_UUID
-          value: "ed882052-374c-4a48-9d7b-f61bb2620d80"
+          value: "9e5d4588-4f3b-4c9a-8c60-bbaebb5fd02c"
         - name: Vless_Path
-          value: "/kgbgf"
+          value: "/bgtff"
         - name: Vmess_UUID
-          value: "ed882052-374c-4a48-9d7b-f61bb2620d80"
+          value: "9e5d4588-4f3b-4c9a-8c60-bbaebb5fd02c"
         - name: Vmess_Path
-          value: "/xcfdvf"
+          value: "/mkiol"
         - name: Share_Path
           value: "/share233"
